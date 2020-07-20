@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,324 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uberAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-uber-logo-decal-lyft-road-icon-5b44f09379a2a7.1632053615312446914982" translatesAutoresizingMaskIntoConstraints="NO" id="EkE-YR-gbg">
+                                <rect key="frame" x="87" y="44" width="240" height="130"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="driver@yahoo.com" borderStyle="roundedRect" placeholder="Enter email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5UD-8M-52K">
+                                <rect key="frame" x="49" y="182" width="316" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="erickelnino" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="OGg-oY-RCL">
+                                <rect key="frame" x="49" y="224" width="316" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9IH-Jj-bih">
+                                <rect key="frame" x="184" y="264" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnc-bX-4No">
+                                <rect key="frame" x="258" y="264" width="46" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="vVH-vQ-HMv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klG-Xc-Utp">
+                                <rect key="frame" x="122" y="264" width="54" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3P-ZY-xqQ">
+                                <rect key="frame" x="87" y="352" width="240" height="267"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGg-Rj-5wP">
+                                        <rect key="frame" x="83" y="8" width="74" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="x08-3t-W7D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUPButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEe-xV-qHc"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-Xk-Mdx">
+                                        <rect key="frame" x="98" y="71" width="44" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="NSL-Jz-US4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7I-zp-Mze">
+                                        <rect key="frame" x="0.0" y="115" width="240" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="bLa-ep-7Te"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Switch to log In"/>
+                                        <connections>
+                                            <action selector="switchtologinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFy-AR-kpP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="3aV-Xk-Mdx" firstAttribute="leading" secondItem="u3P-ZY-xqQ" secondAttribute="leading" constant="98" id="7Fh-Iv-aYV"/>
+                                    <constraint firstItem="nGg-Rj-5wP" firstAttribute="centerX" secondItem="u3P-ZY-xqQ" secondAttribute="centerX" id="9VA-TK-RyD"/>
+                                    <constraint firstItem="nGg-Rj-5wP" firstAttribute="top" secondItem="u3P-ZY-xqQ" secondAttribute="topMargin" id="GhU-BJ-q3Y"/>
+                                    <constraint firstItem="d7I-zp-Mze" firstAttribute="top" secondItem="3aV-Xk-Mdx" secondAttribute="bottom" constant="8" id="RJU-Tn-eeS"/>
+                                    <constraint firstItem="nGg-Rj-5wP" firstAttribute="leading" secondItem="u3P-ZY-xqQ" secondAttribute="leading" constant="83" id="VrF-QH-Ob0"/>
+                                    <constraint firstItem="3aV-Xk-Mdx" firstAttribute="centerX" secondItem="d7I-zp-Mze" secondAttribute="centerX" id="lba-Vv-Pcm"/>
+                                    <constraint firstItem="3aV-Xk-Mdx" firstAttribute="top" secondItem="nGg-Rj-5wP" secondAttribute="bottom" constant="33" id="oiS-nm-SAC"/>
+                                    <constraint firstItem="nGg-Rj-5wP" firstAttribute="centerX" secondItem="3aV-Xk-Mdx" secondAttribute="centerX" id="xce-hd-4Fy"/>
+                                    <constraint firstItem="d7I-zp-Mze" firstAttribute="leading" secondItem="u3P-ZY-xqQ" secondAttribute="leading" id="y9y-l7-YjN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="klG-Xc-Utp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="0e7-mf-6uu"/>
+                            <constraint firstItem="EkE-YR-gbg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="19p-og-Rb1"/>
+                            <constraint firstItem="5UD-8M-52K" firstAttribute="top" secondItem="EkE-YR-gbg" secondAttribute="bottom" constant="8" id="3SE-fp-h7M"/>
+                            <constraint firstItem="klG-Xc-Utp" firstAttribute="top" secondItem="OGg-oY-RCL" secondAttribute="bottom" constant="6" id="6tq-Xq-QzG"/>
+                            <constraint firstItem="klG-Xc-Utp" firstAttribute="bottom" secondItem="9IH-Jj-bih" secondAttribute="bottom" id="7Ba-9x-bg3"/>
+                            <constraint firstItem="klG-Xc-Utp" firstAttribute="baseline" secondItem="Lnc-bX-4No" secondAttribute="baseline" id="BcM-Qn-O5x"/>
+                            <constraint firstItem="OGg-oY-RCL" firstAttribute="top" secondItem="5UD-8M-52K" secondAttribute="bottom" constant="8" id="De2-pt-2bF"/>
+                            <constraint firstItem="Lnc-bX-4No" firstAttribute="leading" secondItem="9IH-Jj-bih" secondAttribute="trailing" constant="25" id="E1z-D7-Hxz"/>
+                            <constraint firstItem="EkE-YR-gbg" firstAttribute="centerX" secondItem="5UD-8M-52K" secondAttribute="centerX" id="H0g-4Q-IuF"/>
+                            <constraint firstItem="EkE-YR-gbg" firstAttribute="leading" secondItem="u3P-ZY-xqQ" secondAttribute="leading" id="KJ4-je-jkI"/>
+                            <constraint firstItem="5UD-8M-52K" firstAttribute="leading" secondItem="OGg-oY-RCL" secondAttribute="leading" id="MLs-bT-cZ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lnc-bX-4No" secondAttribute="trailing" constant="110" id="URo-hd-oEa"/>
+                            <constraint firstItem="EkE-YR-gbg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wdx-NI-U8Y"/>
+                            <constraint firstItem="9IH-Jj-bih" firstAttribute="leading" secondItem="klG-Xc-Utp" secondAttribute="trailing" constant="8" id="ZP3-Um-GLw"/>
+                            <constraint firstItem="EkE-YR-gbg" firstAttribute="trailing" secondItem="u3P-ZY-xqQ" secondAttribute="trailing" id="b6e-d2-HC5"/>
+                            <constraint firstItem="klG-Xc-Utp" firstAttribute="firstBaseline" secondItem="Lnc-bX-4No" secondAttribute="firstBaseline" id="bog-u8-GTA"/>
+                            <constraint firstItem="u3P-ZY-xqQ" firstAttribute="top" secondItem="klG-Xc-Utp" secondAttribute="bottom" constant="57" id="hc5-rd-WKU"/>
+                            <constraint firstItem="5UD-8M-52K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="hvW-t7-Gd9"/>
+                            <constraint firstItem="5UD-8M-52K" firstAttribute="trailing" secondItem="OGg-oY-RCL" secondAttribute="trailing" id="jou-8F-kWc"/>
+                            <constraint firstItem="klG-Xc-Utp" firstAttribute="top" secondItem="9IH-Jj-bih" secondAttribute="top" id="osm-zw-v8g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u3P-ZY-xqQ" secondAttribute="bottom" constant="243" id="pzb-1w-0kH"/>
+                            <constraint firstItem="EkE-YR-gbg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="uOu-7y-Bbe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UUc-io-pgm"/>
+                    <connections>
+                        <outlet property="bottombutton" destination="d7I-zp-Mze" id="ajy-1a-vgI"/>
+                        <outlet property="driverRiderSwitch" destination="9IH-Jj-bih" id="uR4-u7-rh5"/>
+                        <outlet property="driverlabele" destination="Lnc-bX-4No" id="ZnN-kf-Hmh"/>
+                        <outlet property="emailAdress" destination="5UD-8M-52K" id="K4I-ST-pfN"/>
+                        <outlet property="passwordField" destination="OGg-oY-RCL" id="Uyn-SI-1U3"/>
+                        <outlet property="riderlabel" destination="klG-Xc-Utp" id="YJs-fZ-FOP"/>
+                        <outlet property="topbutton" destination="nGg-Rj-5wP" id="Ckg-nM-Pt5"/>
+                        <segue destination="m4V-uN-p8o" kind="presentation" identifier="segueRider" id="7Lh-OP-9NF"/>
+                        <segue destination="vwx-MQ-Pe4" kind="presentation" identifier="DriverSegue" id="JqS-5a-d65"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="964" y="61"/>
+        </scene>
+        <!--Rider-->
+        <scene sceneID="C6h-xD-DX6">
+            <objects>
+                <viewController storyboardIdentifier="RiderViewController" id="vTd-55-DmJ" customClass="RiderViewController" customModule="uberAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2UH-fk-fXY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jBs-ta-IRC">
+                                <rect key="frame" x="20" y="241" width="374" height="418"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyU-V5-R7y">
+                                <rect key="frame" x="20" y="667" width="374" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Request an uber"/>
+                                <connections>
+                                    <action selector="requestanUber:" destination="vTd-55-DmJ" eventType="touchUpInside" id="6L2-2G-U2J"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kisspng-uber-logo-decal-lyft-road-icon-5b44f09379a2a7.1632053615312446914982" translatesAutoresizingMaskIntoConstraints="NO" id="KsX-HA-SEs">
+                                <rect key="frame" x="87" y="103" width="240" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YHV-nd-EVQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rider" id="WrY-aU-b8z">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="lock" catalog="system" id="WHb-6X-UUN">
+                            <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <connections>
+                                <action selector="logoutbutton:" destination="vTd-55-DmJ" id="7Xm-xb-dmG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapviewDisplay" destination="jBs-ta-IRC" id="rkQ-Dp-4wg"/>
+                        <outlet property="reuestuberDrive" destination="vyU-V5-R7y" id="oQk-AZ-tgt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHp-5X-xlz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="39"/>
+        </scene>
+        <!--Uber Clone-->
+        <scene sceneID="hKG-Og-hlV">
+            <objects>
+                <navigationController title="Uber Clone" wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="m4V-uN-p8o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Uber Clone" id="6rL-tj-gHh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YkR-K0-7Nv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vOf-Nw-C1e">
+                        <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vTd-55-DmJ" kind="relationship" relationship="rootViewController" id="yvH-Yk-pdl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seS-J8-cF9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="49"/>
+        </scene>
+        <!--Uiber Activity-->
+        <scene sceneID="ntn-gN-TLd">
+            <objects>
+                <tableViewController storyboardIdentifier="Driver tableView" id="MSb-Er-0TC" customClass="DriverTableViewController" customModule="uberAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Plb-9i-FGi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="98" id="Hej-Mx-Uzi">
+                                <rect key="frame" x="0.0" y="28" width="414" height="98"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hej-Mx-Uzi" id="UPO-L5-i5z">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MSb-Er-0TC" id="O9H-yQ-6PY"/>
+                            <outlet property="delegate" destination="MSb-Er-0TC" id="etC-Wo-rCe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Uiber Activity" id="UIl-yt-esC">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="lock" catalog="system" id="kHO-UC-sh3">
+                            <connections>
+                                <action selector="logOut:" destination="MSb-Er-0TC" id="pdc-jX-kpc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="BTa-KD-pGD" kind="show" identifier="activitysegue" id="30H-DL-1vk"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCa-ej-xPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2004" y="826"/>
+        </scene>
+        <!--Uber-->
+        <scene sceneID="UQB-3b-qXw">
+            <objects>
+                <viewController id="BTa-KD-pGD" customClass="AcceptRideViewController" customModule="uberAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F9M-Rh-pGz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="krL-4w-2w1">
+                                <rect key="frame" x="20" y="211" width="374" height="420"/>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-uber-logo-decal-lyft-road-icon-5b44f09379a2a7.1632053615312446914982" translatesAutoresizingMaskIntoConstraints="NO" id="ZFh-xm-Ggg">
+                                <rect key="frame" x="87" y="56" width="240" height="147"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-Wy-Z2E">
+                                <rect key="frame" x="20" y="656" width="374" height="74"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="bpu-Bg-Nht"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Accept Ride">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="acceptRide:" destination="BTa-KD-pGD" eventType="touchUpInside" id="3Cw-lt-HpL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="krL-4w-2w1" firstAttribute="leading" secondItem="ceo-Wy-Z2E" secondAttribute="leading" id="5I8-QW-XdM"/>
+                            <constraint firstItem="ceo-Wy-Z2E" firstAttribute="top" secondItem="krL-4w-2w1" secondAttribute="bottom" constant="25" id="6iW-g6-pBz"/>
+                            <constraint firstItem="krL-4w-2w1" firstAttribute="top" secondItem="ZFh-xm-Ggg" secondAttribute="bottom" constant="8" id="94R-tb-2eE"/>
+                            <constraint firstItem="krL-4w-2w1" firstAttribute="trailing" secondItem="F9M-Rh-pGz" secondAttribute="trailingMargin" id="A0V-wN-ObG"/>
+                            <constraint firstItem="ZFh-xm-Ggg" firstAttribute="leading" secondItem="o4i-f9-MfI" secondAttribute="leading" constant="87" id="C70-WK-503"/>
+                            <constraint firstItem="o4i-f9-MfI" firstAttribute="bottom" secondItem="ceo-Wy-Z2E" secondAttribute="bottom" constant="78" id="KA3-gA-odP"/>
+                            <constraint firstItem="krL-4w-2w1" firstAttribute="leading" secondItem="F9M-Rh-pGz" secondAttribute="leadingMargin" id="QBA-CA-C48"/>
+                            <constraint firstItem="krL-4w-2w1" firstAttribute="centerY" secondItem="F9M-Rh-pGz" secondAttribute="centerY" id="RjP-T7-UaX"/>
+                            <constraint firstItem="ZFh-xm-Ggg" firstAttribute="centerX" secondItem="krL-4w-2w1" secondAttribute="centerX" id="dCA-9Z-AAB"/>
+                            <constraint firstItem="krL-4w-2w1" firstAttribute="trailing" secondItem="ceo-Wy-Z2E" secondAttribute="trailing" id="fsP-ui-Xdq"/>
+                            <constraint firstItem="ZFh-xm-Ggg" firstAttribute="top" secondItem="o4i-f9-MfI" secondAttribute="top" id="zk4-Lz-vLi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o4i-f9-MfI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Uber" id="hUp-PU-1wu"/>
+                    <connections>
+                        <outlet property="acceptbutton" destination="ceo-Wy-Z2E" id="cjm-xM-lHA"/>
+                        <outlet property="activitymapView" destination="krL-4w-2w1" id="VbH-mb-2Dx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ukg-yY-vEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3005.7971014492755" y="825.66964285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nsT-rP-Sda">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vwx-MQ-Pe4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="dyq-af-YVA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MSb-Er-0TC" kind="relationship" relationship="rootViewController" id="2wc-gu-WWl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvD-PS-Pvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="826"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kisspng-uber-logo-decal-lyft-road-icon-5b44f09379a2a7.1632053615312446914982" width="130" height="130"/>
+        <image name="lock" catalog="system" width="64" height="64"/>
+    </resources>
 </document>
